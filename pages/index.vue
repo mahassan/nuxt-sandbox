@@ -1,23 +1,8 @@
 <template>
   <section class="container">
     <div>
-      <logo/>
-      <h1 class="title">
-        my-first-nuxt-app
-      </h1>
-      <h2 class="subtitle">
-        My transcendent Nuxt.js project
-      </h2>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          class="button--green">Documentation</a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey">GitHub</a>
-      </div>
+      <input type="text" v-model="userId">
+      <button @click="onLoadUser">Load user</button> {{userId}}
     </div>
   </section>
 </template>
@@ -26,8 +11,15 @@
 import Logo from '~/components/Logo.vue'
 
 export default {
-  components: {
-    Logo
+  data(){
+    return {
+      userId : ''
+    }
+  },
+  methods: {
+    onLoadUser(){
+      this.$router.push('/users/' + this.userId)
+    }
   }
 }
 </script>
