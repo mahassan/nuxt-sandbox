@@ -4,7 +4,9 @@
       <input type="text" v-model="userId">
       <button @click="onLoadUser">Load user</button> {{userId}}
     </div>
+    <button @click="onLoadProducts">Products</button>
   </section>
+
 </template>
 
 <script>
@@ -17,8 +19,8 @@ export default {
     }
   },
   methods: {
-    onLoadUser(){
-      this.$router.push('/users/' + this.userId)
+    onLoadProducts(){
+      this.$router.push('/products/')
     }
   }
 }
