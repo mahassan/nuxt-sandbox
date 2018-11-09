@@ -1,3 +1,13 @@
 <template>
     <h1> The User View </h1>
-</template
+</template>
+<script>
+export default {
+    data(){
+        return {
+
+        }
+    },
+    layout: 'users'   
+}
+</script>

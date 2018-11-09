@@ -1,23 +1,5 @@
-# my-first-nuxt-app
+# Layout and Error pages
 
-> My transcendent Nuxt.js project
+> For error pages, we use error.vue in /layout
+> To use custom layout for any page, we use 'layout' property in scripts of the concerned page, whereas layout of the custome page is under /layout e.g /layout/users.vue and use it in users/index.vue
 
-## Build Setup
-
-``` bash
-# install dependencies
-$ npm install
-
-# serve with hot reload at localhost:3000
-$ npm run dev
-
-# build for production and launch server
-$ npm run build
-$ npm start
-
-# generate static project
-$ npm run generate
-```
-
-For detailed explanation on how things work, checkout [Nuxt.js docs](https://nuxtjs.org).
-# nuxt-sandbox
