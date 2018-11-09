@@ -1,9 +1,5 @@
 <template>
   <section class="container">
-    <div>
-      <input type="text" v-model="userId">
-      <button @click="onLoadUser">Load user</button> {{userId}}
-    </div>
     <button @click="onLoadProducts">Products</button>
   </section>
 
